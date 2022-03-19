@@ -1,9 +1,9 @@
-# Network Load Balancer and ECS App
+# networkloadbalancerecs
 
 This project creates:
-- CloudWatch LogGroup;
-- ECS App Node;
-- Network Load Balancer;
+- A Network Load Balancer in front of an ECS App;
+- An ECS App running NodeJS;
+- A CloudWatch LogGroup;
 
 ## Local deploy
 
@@ -38,3 +38,11 @@ Push docker image to ECR repository
 ## Conditions
 
 - The subnet IDs must belong to private subnets with NAT Gateways to keep access to internet;
+
+## Helpful links
+
+- [What is a Network Load Balancer?][1]
+- [What is Amazon Elastic Container Service?][2]
+
+[1]: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html
+[2]: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
